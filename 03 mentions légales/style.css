@@ -1,0 +1,146 @@
+/* FONTS */
+@font-face {
+    font-family: Lexend;
+    src: url(../Asset/Police/Lexend-VariableFont_wght.woff2);
+}
+@font-face {
+    font-family: DM-Mono-Medium;
+    src: url(../Asset/Police/DMMono-Medium.woff2);
+}
+@font-face {
+    font-family: DM-Mono-LightItalic;
+    src: url(../Asset/Police/DMMono-LightItalic.woff2);
+}
+
+/* BOOTSTRAP COSTUMISE */
+:root{
+    --bs-link-opacity: black;    
+}
+
+/* OVERALL SETTING */
+html, body{
+    max-width: 1080px;
+    margin: auto;
+}
+h1{
+    font-family: 'Lexend';
+    font-size: 32pt !important;
+    font-weight: 500;
+}
+h2{
+    font-family: 'Lexend';
+    font-size: 24pt !important;
+    font-weight: 500;   
+}
+h3{
+    font-family: 'DM-Mono-Medium';
+    font-size: 24pt !important;
+    text-decoration: underline;
+}
+h4{
+    font-family: 'DM-Mono-Medium';
+    font-size: 14pt !important;
+}
+p, .list-p{
+    font-family: 'Lexend';
+    font-weight: 300;
+}
+i{
+    font-family: 'DM-Mono-LightItalic';
+}
+a{
+    text-decoration: none !important;
+}
+li{
+    list-style: none;
+}
+
+    /* BUTTON CONFIGURATION */
+button{
+    background-color: #09FF0D;
+    font-family: 'DM-Mono-Medium'!important;
+    font-size: 14pt !important;
+    border: none !important;
+    padding: 12px !important;
+}
+button:hover{
+    background-color: #09E60D;
+    text-decoration: underline solid 2px;
+}
+
+
+/* NAV */
+#block-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-menu{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+}
+.burger-menu{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.menu-button{
+    display: none;
+}
+
+@media(max-width: 750px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .burger-menu{
+        width: 100%;
+    }
+    .menu-button{
+        display: block;
+        margin-right: 10px;
+    }
+}
+.nav1, .nav2, .nav3{
+    font-family: 'DM-Mono-Medium';
+    max-width: 160px;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding: 16px;
+    align-content: center;
+}
+.nav1:hover, .nav2:hover, .nav3:hover{
+    text-decoration: underline solid 2px #09FF0D;
+}
+
+
+/* MAIN */
+.text-presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+
+
+/* FOOTER */
+footer{
+    font-family: "DM-Mono-Medium";
+    align-content: center;
+}
+/* ANIMATION */
+.link:hover{
+    text-decoration: underline solid #09FF0D;
+}
