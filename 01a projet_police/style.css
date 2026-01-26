@@ -1,15 +1,15 @@
 /* FONTS */
 @font-face {
     font-family: Lexend;
-    src: url(./Asset/Police/Lexend-VariableFont_wght.woff2);
+    src: url(../Asset/Police/Lexend-VariableFont_wght.woff2);
 }
 @font-face {
     font-family: DM-Mono-Medium;
-    src: url(./Asset/Police/DMMono-Medium.woff2);
+    src: url(../Asset/Police/DMMono-Medium.woff2);
 }
 @font-face {
     font-family: DM-Mono-LightItalic;
-    src: url(./Asset/Police/DMMono-LightItalic.woff2);
+    src: url(../Asset/Police/DMMono-LightItalic.woff2);
 }
 
 /* BOOTSTRAP COSTUMISE */
@@ -30,16 +30,23 @@ h1{
 h2{
     font-family: 'Lexend';
     font-size: 24pt !important;
-    font-weight: 500;
+    font-weight: 500;   
 }
 h3{
     font-family: 'DM-Mono-Medium';
     font-size: 24pt !important;
     text-decoration: underline;
 }
+h4{
+    font-family: 'DM-Mono-Medium';
+    font-size: 14pt !important;
+}
 p, .list-p{
     font-family: 'Lexend';
     font-weight: 300;
+}
+i{
+    font-family: 'DM-Mono-LightItalic';
 }
 a{
     text-decoration: none !important;
@@ -47,7 +54,6 @@ a{
 li{
     list-style: none;
 }
-
 
     /* BUTTON CONFIGURATION */
 button{
@@ -73,7 +79,6 @@ button:hover{
     justify-content: flex-end;
     margin: 0px;
 }
-
 .burger-menu{
     position: fixed;
     top: 0px;
@@ -94,6 +99,9 @@ button:hover{
 }
 
 @media(max-width: 750px) {
+    .return-button{
+        display: none;
+    }
     .hideOnMobile{
         display: none;
     }
@@ -105,7 +113,6 @@ button:hover{
         margin-right: 10px;
     }
 }
-
 .nav1, .nav2, .nav3{
     font-family: 'DM-Mono-Medium';
     max-width: 160px;
@@ -126,9 +133,7 @@ button:hover{
     flex-direction: column;
     justify-content: flex-end;
 }
-.text-projets{
-    align-content: center;
-}
+
 
 
 
@@ -144,6 +149,6 @@ footer{
 
 
 /* à chnager pour tous les pages */
-.nav1{
+.nav2{
     text-decoration: underline solid 2px #09FF0D;
 }
